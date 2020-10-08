@@ -1,0 +1,175 @@
+img {
+    vertical-align: top;
+}
+body {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: -apple-system,Helvetica,sans-serif;
+    color: #666;
+}
+.nav {
+    position: fixed;
+    height: 44px;
+    width: 100%;
+    top: 0px;
+    overflow: hidden;
+    z-index: 1;
+    max-width: 640px;
+    min-width: 320px;
+    background-color: darkred;
+}
+.left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 44px;
+    width: 40px;
+}
+.left::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 18px;
+    background:url("../image/nav.left.png") no-repeat;
+    background-size: 20px 18px;
+    margin:14px 15px;
+}
+.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 44px;
+    width: 40px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 14px;
+}
+.center {
+    position: relative;
+    height: 40px;
+    background-color: aliceblue;
+    margin: 0px 50px ;
+    border-radius: 20px;
+    top:4px;
+    overflow: hidden;
+
+}
+.center .img-jd {
+    position: absolute;
+    margin:8px 15px;
+    left:5px;
+    top:5px;
+    width: 20px;
+    height: 15px;
+    background:url("../image/jd.png");
+    background-size: 20px 15px;
+}
+.center .img-jd::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15px;
+    width: 1px;
+    background-color: #ddd;
+    margin: 0px 25px;
+}
+.center .sprites {
+    position: absolute;
+    width: 18px;
+    height: 15px;
+    background:url("../image/jd-sprites.png") no-repeat;
+    background-position: -80px 0;
+    left: 50px;
+    top:13px;
+}
+.center .form {
+    position: absolute;
+    left: 75px;
+    top: 10px;
+}
+input {
+    background-color:aliceblue ;
+    border: 0;
+    outline: none;
+}
+.body {
+    position: relative;
+    width:100%;
+}
+.body .slider {
+
+    opacity: 0.5;
+    width: 100%;
+    background-size:100% 1000px;
+    margin-top: 45px;
+}
+.body .slider img {
+    width: 100%;
+}
+.brand  {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+.brand div {
+    width: 33.3%;
+    float: left;
+}
+.brand div img {
+    width: 100%;
+}
+.categroy {
+    width: 100%;
+    margin-top: 25px;
+    overflow: hidden;
+}
+.categroy a {
+    float: left;
+    width:  20%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #666666;
+}
+.categroy a img {
+    margin: 5px 11px;
+    width: 60%;
+}
+.shopping {
+    width: 100%;
+    overflow: scroll;
+}
+.shopping li {
+    width: 84.3px;
+    height:114px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.shopping li img {
+    width: 84.3px;
+    height:114px;
+}
+.shopping li:nth-child(1) {
+    margin-left: 0px;
+}
+.shopping ul{
+    list-style: none;
+    width: 840px;
+    padding: 0;
+}
+.shopping::-webkit-scrollbar {
+    display: none;
+}
+.price {
+    display: block;
+    text-align: center;
+}
+.price-now {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
